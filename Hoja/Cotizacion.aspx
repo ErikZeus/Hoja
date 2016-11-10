@@ -5,40 +5,36 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-<style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #5268B4;
-}
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/scripts.js"></script>
+    <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../css/960.css" rel="stylesheet" type="text/css" />
+    <link href="../css/coolMenu.css" rel="stylesheet" type="text/css" media="screen" />
+    <script type="text/javascript" src="../js/modernizr-1.6.min.js"></script>
+    <style>
 
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #254DDD;
-}
 </style>
+    <%--        <style>
+        #menu {
+            width: 50px;
+            cursor: pointer;
+        }
+        
+        #menu_button {
+            width: inherit;
+            background-color: #DDD;
+        }
+        
 
+    </style>--%>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    <asp:Literal id="litMarkup" runat="server" />
-    </div>
+        <div>
+            <asp:Literal ID="coolMenu" runat="server" />
+        </div>
+
+
     </form>
 </body>
 </html>

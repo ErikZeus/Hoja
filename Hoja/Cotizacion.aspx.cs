@@ -15,21 +15,20 @@ namespace Hoja
             List<string> locations = new List<string>(); // however this initialized 
             locations.Add("Home");
             locations.Add("Cotizador");
-            locations.Add("Panel 1");
-            locations.Add("Panel 2");
 
             StringBuilder sb = new StringBuilder();
 
-            sb.Append("<ul id=\"tabs\">");
+            sb.Append("<ul id='coolMenu'  >");
 
             for (int i = 0; i < locations.Count; i++)
             {
-                sb.Append("<li id=\"tab" + i.ToString() + "\"><a href=\"" + locations[i] + "\">" + locations[i].ToString() + "</a></li>");
-            }
+                sb.Append("<li id=\"tab" + i.ToString() + "\" ><a href=\"" + locations[i] + "\">" + locations[i].ToString() + "</a><ul class='noJS'><li><a href='#'>Hellenico</a></li><li><a href='#'>Genere</a></li><li><a href='#'>Indulgentia</a></li></ul></li>");
 
+            }
+           
             sb.Append("</ul>");
 
-            litMarkup.Text = sb.ToString();
+            coolMenu.Text = sb.ToString();
         }
     }
 }
