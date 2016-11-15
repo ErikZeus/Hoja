@@ -12,8 +12,6 @@ namespace Hoja {
     
     public partial class Cotizacion {
         
-
-        
         /// <summary>
         /// form1 control.
         /// </summary>

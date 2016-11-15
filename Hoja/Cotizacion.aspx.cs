@@ -15,20 +15,30 @@ namespace Hoja
             List<string> locations = new List<string>(); // however this initialized 
             locations.Add("Home");
             locations.Add("Cotizador");
-
+            locations.Add("Kellen");
+            locations.Add("Erik");
+      
+ 
             StringBuilder sb = new StringBuilder();
 
             sb.Append("<ul id='coolMenu'  >");
 
             for (int i = 0; i < locations.Count; i++)
             {
-                if (locations[i].ToString() == "Cotizador")
+
+                if (locations[i].ToString() == "Erik")
                 {
-                    sb.Append("<li id=\"tab" + i.ToString() + "\" ><a href=\"" + locations[i] + "\">" + locations[i].ToString() + "</a><ul class='noJS'><li><a href='#'>Hellenico</a></li><li><a href='#'>Genere</a></li><li><a href='#'>Indulgentia</a></li></ul></li>");
+                    sb.Append("<li id=\"tab" + i.ToString() + "\" ><a href=\"" + locations[i] + "\">" + locations[i].ToString() + "</a><ul class='noJS'><li><a href='http://www.grupo-hesse.com'>Gordita</a></li></li>");
+                    break;
                 }
-                else {
-                    sb.Append("<li id=\"tab" + i.ToString() + "\" ><a href=\"" + locations[i] + "\">" + locations[i].ToString() + "</a></li>");
+                if (locations[i].ToString() == "Kellen")
+                {
+                    sb.Append("<li id=\"tab" + i.ToString() + "\" ><a href=\"" + locations[i] + "\">" + locations[i].ToString() + "</a><ul class='noJS'><li><a href='http://www.grupo-hesse.com'>Gordita</a></li></li>");
+                    break;
                 }
+
+                sb.Append("<li id=\"tab" + i.ToString() + "\" ><a href=\"" + locations[i] + "\">" + locations[i].ToString() + "</a><ul class='noJS'><li><a href='#'>Hellenico</a></li><li><a href='#'>Genere</a></li><li><a href='#'>Indulgentia</a></li></ul></li>");
+        
             }
            
             sb.Append("</ul>");
